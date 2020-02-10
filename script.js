@@ -78,6 +78,7 @@ function resetGame(){
 	document.querySelectorAll('.square').forEach(item=>{
 		item.style.backgroundColor = "white"
 	})
+	clickCount = 0
 }
 
 
@@ -135,55 +136,71 @@ function resetGame(){
 // }
 function alertWinner(){
 	if(boxColors[0]==='red' && boxColors[1] === 'red' && boxColors[2] === 'red'){
-		console.log('red wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='red'})
+		alert('Red wins. Click the New Game button to play again.')
 	}
 	if(boxColors[0]==='blue' && boxColors[1] === 'blue' && boxColors[2] === 'blue'){
-		console.log('blue wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
+		alert('Blue wins. Click the New Game button to play again.')
 	}
 	if(boxColors[0]==='red' && boxColors[3] === 'red' && boxColors[6] === 'red'){
-		console.log('red wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='red'})
+		alert('Red wins. Click the New Game button to play again.')
 	}
 	if(boxColors[0]==='blue' && boxColors[3] === 'blue' && boxColors[6] === 'blue'){
-		console.log('blue wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
+		alert('Blue wins. Click the New Game button to play again.')
 	}
 	if(boxColors[1]==='red' && boxColors[4] === 'red' && boxColors[7] === 'red'){
-		console.log('red wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='red'})
+		alert('Red wins. Click the New Game button to play again.')
 	}
 	if(boxColors[1]==='blue' && boxColors[4] === 'blue' && boxColors[7] === 'blue'){
-		console.log('blue wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
+		alert('Blue wins. Click the New Game button to play again.')
 	}
 	if(boxColors[3]==='red' && boxColors[4] === 'red' && boxColors[5] === 'red'){
-		console.log('red wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='red'})
+		alert('Red wins. Click the New Game button to play again.')
 	}
 	if(boxColors[3]==='blue' && boxColors[4] === 'blue' && boxColors[5] === 'blue'){
-		console.log('blue wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
+		alert('Blue wins. Click the New Game button to play again.')
 	}
 	if(boxColors[2]==='red' && boxColors[5] === 'red' && boxColors[8] === 'red'){
-		console.log('red wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='red'})
+		alert('Red wins. Click the New Game button to play again.')
 	}
 	if(boxColors[2]==='blue' && boxColors[5] === 'blue' && boxColors[8] === 'blue'){
-		console.log('blue wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
+		alert('Blue wins. Click the New Game button to play again.')
 	}
 	if(boxColors[6]==='red' && boxColors[7] === 'red' && boxColors[8] === 'red'){
-		console.log('red wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='red'})
+		alert('Red wins. Click the New Game button to play again.')
 	}
 	if(boxColors[6]==='blue' && boxColors[7] === 'blue' && boxColors[8] === 'blue'){
-		console.log('blue wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
+		alert('Blue wins. Click the New Game button to play again.')
 	}
 	if(boxColors[0]==='red' && boxColors[4] === 'red' && boxColors[8] === 'red'){
-		console.log('red wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='red'})
+		alert('Red wins. Click the New Game button to play again.')
 	}
 	if(boxColors[0]==='blue' && boxColors[4] === 'blue' && boxColors[8] === 'blue'){
-		console.log('blue wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
+		alert('Blue wins. Click the New Game button to play again.')
 	}
 	if(boxColors[2]==='red' && boxColors[4] === 'red' && boxColors[6] === 'red'){
-		console.log('red wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='red'})
+		alert('Red wins. Click the New Game button to play again.')
 	}
 	if(boxColors[2]==='blue' && boxColors[4] === 'blue' && boxColors[6] === 'blue'){
-		console.log('blue wins')
+		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
+		alert('Blue wins. Click the New Game button to play again.')
 	}
 	if(clickCount===9){
-		console.log('Tie')
+		alert('Tie')
 	}
 }
 
