@@ -91,7 +91,22 @@ function alertWinner(){
 			console.log('Blue wins')
 		}
 	}
-	console.log(boxColors)
+	else if(boxColors[0]===boxColors[3] && boxColors[3]===boxColors[6]){
+		if(boxColors[0]==='red'){
+			console.log('Red wins')
+		}
+		else if(boxColors[0]==='blue'){
+			console.log('Blue wins')
+		}
+	}
+	else if(boxColors[0]===boxColors[4] && boxColors[4]===boxColors[8]){
+		if(boxColors[0]==='red'){
+			console.log('Red wins')
+		}
+		else if(boxColors[0]==='blue'){
+			console.log('Blue wins')
+		}
+	}
 }
 
 
