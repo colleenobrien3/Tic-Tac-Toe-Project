@@ -1,0 +1,67 @@
+h1 {
+	color: blue;
+}
+.square {
+	border: solid;
+}
+#gameBoard {
+	height: 450px;
+	width: 450px;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	border: solid;
+
+}
+
+body {
+	text-align: center;
+}
+
+#box1 {
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+}
+
+#box2 {
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+}
+#box3 {
+	grid-column: 3 / span 1;
+	grid-row: 1 / span 1;
+}
+#box4 {
+	grid-column: 1 / span 1;
+	grid-row: 2 / span 1;
+}
+#box5 {
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 1;
+}
+#box6 {
+	grid-column: 3 / span 1;
+	grid-row: 2 / span 1;
+}
+#box7 {
+	grid-column: 1 / span 1;
+	grid-row: 3 / span 1;
+}
+#box8 {
+	grid-column: 2 / span 1;
+	grid-row: 3 / span 1;
+}
+#box9 {
+	grid-column: 3 / span 1;
+	grid-row: 3 / span 1;
+}
+
+#resetButton {
+	height: 100px;
+	width: 100px;
+	display: block;
+	margin: auto;
+}
+
+
+
