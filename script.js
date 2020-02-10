@@ -82,51 +82,109 @@ function resetGame(){
 
 
 
+// function alertWinner(){
+// 	if(boxColors[0]===boxColors[1] && boxColors[1]===boxColors[2]){
+// 		if(boxColors[0]==='red'){
+// 			console.log('Red wins')
+// 		}
+// 		else if(boxColors[0]==='blue'){
+// 			console.log('Blue wins')
+// 		}
+// 	}
+// 	else if(boxColors[0]===boxColors[3] && boxColors[3]===boxColors[6]){
+// 		if(boxColors[0]==='red'){
+// 			console.log('Red wins')
+// 		}
+// 		else if(boxColors[0]==='blue'){
+// 			console.log('Blue wins')
+// 		}
+// 	}
+// 	else if(boxColors[0]===boxColors[4] && boxColors[4]===boxColors[8]){
+// 		if(boxColors[0]==='red'){
+// 			console.log('Red wins')
+// 		}
+// 		else if(boxColors[0]==='blue'){
+// 			console.log('Blue wins')
+// 		}
+// 	}
+// 	else if(boxColors[1]===boxColors[4] && boxColors[4]===boxColors[7]){
+// 		if(boxColors[1]==='red'){
+// 			console.log('Red wins')
+// 		}
+// 		else if(boxColors[1]==='blue'){
+// 			console.log('Blue wins')
+// 		}
+
+// 	}
+// 	else if(boxColors[2]===boxColors[4] && boxColors[4]===boxColors[6]){
+// 		if(boxColors[6]==='red'){
+// 			console.log('Red wins')
+// 		}
+// 		else if(boxColors[6]==='blue'){
+// 			console.log('Blue wins')
+// 		}
+
+// 	}
+// 	else if(boxColors[2]===boxColors[5] && boxColors[5]===boxColors[8] && boxColors[5]==='red'){
+// 		console.log('wtf')
+// 	}
+// 	else if(clickCount===9){
+// 		console.log('Tie')
+// 	}
+
+// }
 function alertWinner(){
-	if(boxColors[0]===boxColors[1] && boxColors[1]===boxColors[2]){
-		if(boxColors[0]==='red'){
-			console.log('Red wins')
-		}
-		else if(boxColors[0]==='blue'){
-			console.log('Blue wins')
-		}
+	if(boxColors[0]==='red' && boxColors[1] === 'red' && boxColors[2] === 'red'){
+		console.log('red wins')
 	}
-	else if(boxColors[0]===boxColors[3] && boxColors[3]===boxColors[6]){
-		if(boxColors[0]==='red'){
-			console.log('Red wins')
-		}
-		else if(boxColors[0]==='blue'){
-			console.log('Blue wins')
-		}
+	if(boxColors[0]==='blue' && boxColors[1] === 'blue' && boxColors[2] === 'blue'){
+		console.log('blue wins')
 	}
-	else if(boxColors[0]===boxColors[4] && boxColors[4]===boxColors[8]){
-		if(boxColors[0]==='red'){
-			console.log('Red wins')
-		}
-		else if(boxColors[0]==='blue'){
-			console.log('Blue wins')
-		}
+	if(boxColors[0]==='red' && boxColors[3] === 'red' && boxColors[6] === 'red'){
+		console.log('red wins')
 	}
-	else if(boxColors[1]===boxColors[4] && boxColors[4]===boxColors[7]){
-		if(boxColors[1]==='red'){
-			console.log('Red wins')
-		}
-		else if(boxColors[1]==='blue'){
-			console.log('Blue wins')
-		}
-
+	if(boxColors[0]==='blue' && boxColors[3] === 'blue' && boxColors[6] === 'blue'){
+		console.log('blue wins')
 	}
-	else if(boxColors[2]===boxColors[4] && boxColors[4]===boxColors[6]){
-		if(boxColors[6]==='red'){
-			console.log('Red wins')
-		}
-		else if(boxColors[6]==='blue'){
-			console.log('Blue wins')
-		}
-
+	if(boxColors[1]==='red' && boxColors[4] === 'red' && boxColors[7] === 'red'){
+		console.log('red wins')
 	}
-
+	if(boxColors[1]==='blue' && boxColors[4] === 'blue' && boxColors[7] === 'blue'){
+		console.log('blue wins')
+	}
+	if(boxColors[3]==='red' && boxColors[4] === 'red' && boxColors[5] === 'red'){
+		console.log('red wins')
+	}
+	if(boxColors[3]==='blue' && boxColors[4] === 'blue' && boxColors[5] === 'blue'){
+		console.log('blue wins')
+	}
+	if(boxColors[2]==='red' && boxColors[5] === 'red' && boxColors[8] === 'red'){
+		console.log('red wins')
+	}
+	if(boxColors[2]==='blue' && boxColors[5] === 'blue' && boxColors[8] === 'blue'){
+		console.log('blue wins')
+	}
+	if(boxColors[6]==='red' && boxColors[7] === 'red' && boxColors[8] === 'red'){
+		console.log('red wins')
+	}
+	if(boxColors[6]==='blue' && boxColors[7] === 'blue' && boxColors[8] === 'blue'){
+		console.log('blue wins')
+	}
+	if(boxColors[0]==='red' && boxColors[4] === 'red' && boxColors[8] === 'red'){
+		console.log('red wins')
+	}
+	if(boxColors[0]==='blue' && boxColors[4] === 'blue' && boxColors[8] === 'blue'){
+		console.log('blue wins')
+	}
+	if(boxColors[2]==='red' && boxColors[4] === 'red' && boxColors[6] === 'red'){
+		console.log('red wins')
+	}
+	if(boxColors[2]==='blue' && boxColors[4] === 'blue' && boxColors[6] === 'blue'){
+		console.log('blue wins')
+	}
+	if(clickCount===9){
+		console.log('Tie')
+	}
 }
-
 
 
