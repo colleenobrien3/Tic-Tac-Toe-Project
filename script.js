@@ -107,6 +107,25 @@ function alertWinner(){
 			console.log('Blue wins')
 		}
 	}
+	else if(boxColors[1]===boxColors[4] && boxColors[4]===boxColors[7]){
+		if(boxColors[1]==='red'){
+			console.log('Red wins')
+		}
+		else if(boxColors[1]==='blue'){
+			console.log('Blue wins')
+		}
+
+	}
+	else if(boxColors[2]===boxColors[4] && boxColors[4]===boxColors[6]){
+		if(boxColors[6]==='red'){
+			console.log('Red wins')
+		}
+		else if(boxColors[6]==='blue'){
+			console.log('Blue wins')
+		}
+
+	}
+
 }
 
 
