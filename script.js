@@ -199,7 +199,7 @@ function alertWinner(){
 		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
 		alert('Blue wins. Click the New Game button to play again.')
 	}
-	if(clickCount===9){
+	else if(clickCount===9){
 		alert('Tie')
 	}
 }
