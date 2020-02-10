@@ -139,69 +139,74 @@ function alertWinner(){
 		eachBox.forEach(item=>{item.style.backgroundColor='red'})
 		alert('Red wins. Click the New Game button to play again.')
 	}
-	if(boxColors[0]==='blue' && boxColors[1] === 'blue' && boxColors[2] === 'blue'){
+	else if(boxColors[0]==='blue' && boxColors[1] === 'blue' && boxColors[2] === 'blue'){
 		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
 		alert('Blue wins. Click the New Game button to play again.')
 	}
-	if(boxColors[0]==='red' && boxColors[3] === 'red' && boxColors[6] === 'red'){
+	else if(boxColors[0]==='red' && boxColors[3] === 'red' && boxColors[6] === 'red'){
 		eachBox.forEach(item=>{item.style.backgroundColor='red'})
 		alert('Red wins. Click the New Game button to play again.')
 	}
-	if(boxColors[0]==='blue' && boxColors[3] === 'blue' && boxColors[6] === 'blue'){
+	else if(boxColors[0]==='blue' && boxColors[3] === 'blue' && boxColors[6] === 'blue'){
 		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
 		alert('Blue wins. Click the New Game button to play again.')
 	}
-	if(boxColors[1]==='red' && boxColors[4] === 'red' && boxColors[7] === 'red'){
+	else if(boxColors[1]==='red' && boxColors[4] === 'red' && boxColors[7] === 'red'){
 		eachBox.forEach(item=>{item.style.backgroundColor='red'})
 		alert('Red wins. Click the New Game button to play again.')
 	}
-	if(boxColors[1]==='blue' && boxColors[4] === 'blue' && boxColors[7] === 'blue'){
+	else if(boxColors[1]==='blue' && boxColors[4] === 'blue' && boxColors[7] === 'blue'){
 		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
 		alert('Blue wins. Click the New Game button to play again.')
 	}
-	if(boxColors[3]==='red' && boxColors[4] === 'red' && boxColors[5] === 'red'){
+	else if(boxColors[3]==='red' && boxColors[4] === 'red' && boxColors[5] === 'red'){
 		eachBox.forEach(item=>{item.style.backgroundColor='red'})
 		alert('Red wins. Click the New Game button to play again.')
 	}
-	if(boxColors[3]==='blue' && boxColors[4] === 'blue' && boxColors[5] === 'blue'){
+	else if(boxColors[3]==='blue' && boxColors[4] === 'blue' && boxColors[5] === 'blue'){
 		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
 		alert('Blue wins. Click the New Game button to play again.')
 	}
-	if(boxColors[2]==='red' && boxColors[5] === 'red' && boxColors[8] === 'red'){
+	else if(boxColors[2]==='red' && boxColors[5] === 'red' && boxColors[8] === 'red'){
 		eachBox.forEach(item=>{item.style.backgroundColor='red'})
 		alert('Red wins. Click the New Game button to play again.')
 	}
-	if(boxColors[2]==='blue' && boxColors[5] === 'blue' && boxColors[8] === 'blue'){
+	else if(boxColors[2]==='blue' && boxColors[5] === 'blue' && boxColors[8] === 'blue'){
 		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
 		alert('Blue wins. Click the New Game button to play again.')
 	}
-	if(boxColors[6]==='red' && boxColors[7] === 'red' && boxColors[8] === 'red'){
+	else if(boxColors[6]==='red' && boxColors[7] === 'red' && boxColors[8] === 'red'){
 		eachBox.forEach(item=>{item.style.backgroundColor='red'})
 		alert('Red wins. Click the New Game button to play again.')
 	}
-	if(boxColors[6]==='blue' && boxColors[7] === 'blue' && boxColors[8] === 'blue'){
+	else if(boxColors[6]==='blue' && boxColors[7] === 'blue' && boxColors[8] === 'blue'){
 		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
 		alert('Blue wins. Click the New Game button to play again.')
 	}
-	if(boxColors[0]==='red' && boxColors[4] === 'red' && boxColors[8] === 'red'){
+	else if(boxColors[0]==='red' && boxColors[4] === 'red' && boxColors[8] === 'red'){
 		eachBox.forEach(item=>{item.style.backgroundColor='red'})
 		alert('Red wins. Click the New Game button to play again.')
 	}
-	if(boxColors[0]==='blue' && boxColors[4] === 'blue' && boxColors[8] === 'blue'){
+	else if(boxColors[0]==='blue' && boxColors[4] === 'blue' && boxColors[8] === 'blue'){
 		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
 		alert('Blue wins. Click the New Game button to play again.')
 	}
-	if(boxColors[2]==='red' && boxColors[4] === 'red' && boxColors[6] === 'red'){
+	else if(boxColors[2]==='red' && boxColors[4] === 'red' && boxColors[6] === 'red'){
 		eachBox.forEach(item=>{item.style.backgroundColor='red'})
 		alert('Red wins. Click the New Game button to play again.')
 	}
-	if(boxColors[2]==='blue' && boxColors[4] === 'blue' && boxColors[6] === 'blue'){
+	else if(boxColors[2]==='blue' && boxColors[4] === 'blue' && boxColors[6] === 'blue'){
 		eachBox.forEach(item=>{item.style.backgroundColor='blue'})
 		alert('Blue wins. Click the New Game button to play again.')
 	}
-	else if(clickCount===9){
-		alert('Tie')
+	else {
+		tieFunc()
 	}
 }
 
+function tieFunc(){
+	if(clickCount===9){
+		alert('There has been a tie. Click the New Game button to play again.')
+	}
+}
 
