@@ -9,39 +9,39 @@ function assign(){
 
 let box1 =  document.querySelector('#box1')
 let box1Color = box1.style.backgroundColor
-console.log(box1Color)
+
 
 let box2 =  document.querySelector('#box2')
 let box2Color = box2.style.backgroundColor
-console.log(box2Color)
+
 
 let box3 =  document.querySelector('#box3')
 let box3Color = box3.style.backgroundColor
-console.log(box3Color)
+
 
 let box4 =  document.querySelector('#box4')
 let box4Color = box4.style.backgroundColor
-console.log(box4Color)
+
 
 let box5 =  document.querySelector('#box5')
 let box5Color = box5.style.backgroundColor
-console.log(box5Color)
+
 
 let box6 =  document.querySelector('#box6')
 let box6Color = box6.style.backgroundColor
-console.log(box6Color)
+
 
 let box7 =  document.querySelector('#box7')
 let box7Color = box7.style.backgroundColor
-console.log(box7Color)
+
 
 let box8 =  document.querySelector('#box8')
 let box8Color = box8.style.backgroundColor
-console.log(box8Color)
+
 
 let box9 =  document.querySelector('#box9')
 let box9Color = box9.style.backgroundColor
-console.log(box9Color)
+
 
 boxColors = [box1Color, box2Color, box3Color, box4Color, box5Color, box6Color, box7Color, box8Color, box9Color]
 
@@ -54,12 +54,12 @@ eachBox.forEach(item => {
 		event.target.style.backgroundColor = 'red';
 		clickUp();
 		assign()
-		console.log(boxColors)
+		alertWinner()
 		} else if (clickCount%2!==0 && event.target.style.backgroundColor==='white') {
 			event.target.style.backgroundColor = 'blue'
 			clickUp()
 			assign()
-			console.log(boxColors)
+			alertWinner()
 		}
 	}
 }
@@ -82,8 +82,17 @@ function resetGame(){
 
 
 
+function alertWinner(){
+	if(boxColors[0]===boxColors[1] && boxColors[1]===boxColors[2]){
+		if(boxColors[0]==='red'){
+			console.log('Red wins')
+		}
+		else if(boxColors[0]==='blue'){
+			console.log('Blue wins')
+		}
+	}
+	console.log(boxColors)
+}
 
 
-
-// g
 
